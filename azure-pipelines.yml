@@ -3,11 +3,11 @@ pool:
 
 variables:
   buildConfiguration: 'Release'
-  dotnetSdkVersion: '5.x'
+  dotnetSdkVersion: 3.1.300
 
 steps:
 - task: UseDotNet@2
-  displayName: 'Use .NET SDK $(dotnetSdkVersion)'
+  displayName: Use .NET Core SDK $(dotnetSdkVersion)
   inputs:
     version: '$(dotnetSdkVersion)'
 
